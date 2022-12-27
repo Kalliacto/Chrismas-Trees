@@ -28,16 +28,21 @@
     letter-spacing: 0.04em;
     color: var(--main-color);
     border: none;
+    box-shadow: 0px 2px 6px transparent;
+    transition-property: background-color, box-shadow, outline-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
 }
 
 .header__consultation:hover {
-
+    background-color: var(--main-bg-color);
 }
 
 .header__consultation:active {
-
+    background-color: var(--main-bg-color);
+    box-shadow: 0px 2px 6px rgba(2, 67, 52, 0.36);
 }
 
 .header__consultation:focus {
-
+    outline-color: var(--second-color);
 }
