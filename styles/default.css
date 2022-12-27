@@ -35,6 +35,17 @@ body {
     color: var(--main-color);
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 h1, h2 {
     font-family: Cormorant, serif;
     font-weight: 700;
@@ -43,7 +54,19 @@ h1, h2 {
     letter-spacing: 0.01em;
 }
 
+button, input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
 .container {
     max-width: 1290px;
     margin: 0 auto;
+}
+
+.hide {
+    display: none;
 }

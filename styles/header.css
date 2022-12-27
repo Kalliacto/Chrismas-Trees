@@ -1,0 +1,43 @@
+.header {
+    color: var(--second-color);
+    padding: 27px 0;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+}
+
+.header__logo {
+    justify-self: start;
+}
+
+.header__novigation {
+    justify-self: center;
+}
+
+.header__consultation {
+    padding: 14px 36px;
+    justify-self: end;
+    border-radius: 10px;
+    background-color: var(--trigger-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    color: var(--main-color);
+    border: none;
+}
+
+.header__consultation:hover {
+
+}
+
+.header__consultation:active {
+
+}
+
+.header__consultation:focus {
+
+}
