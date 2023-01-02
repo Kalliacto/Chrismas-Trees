@@ -1,0 +1,134 @@
+.payment {
+    background-color: var(--second-bg-color);
+    padding: 60px 0 80px;
+}
+
+.pay__title {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 110%;
+    letter-spacing: 0.01em;
+    margin-bottom: 50px;
+}
+
+.pay__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.pay__item {
+    /* 100% всего пространвства / на 3 блока - (40px (30 отступ между 1 и 2 + 20рх между 2 и 3 отступы) / 3) */
+    flex-basis: calc((100% / 3) - (60px / 3));
+}
+
+.option-pay__picture-wrapper {
+    background-color: var(--main-color);
+    min-height: 146px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    margin-bottom: 20px;
+}
+
+.option-pay__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    margin-bottom: 15px;
+}
+.option-pay__discription {
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+}
+
+@media (max-width: 1400px) {
+    .pay__title {
+        font-size: 60px;
+    }
+    .option-pay__title {
+        font-size: 22px;
+    }
+}
+@media (max-width: 1200px) {
+    .pay__title {
+        font-size: 50px;
+    }
+    .pay__list {
+        gap: 20px;
+    }
+    .pay__item {
+        flex-basis: calc((100% / 3) - (40px / 3));
+    }
+    .option-pay__picture-wrapper {
+        margin-bottom: 15px;
+        min-height: 106px;
+        padding: 25px;
+    }
+    .option-pay__title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .option-pay__discription {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .pay__title {
+        font-size: 40px;
+    }
+    .pay__list {
+        gap: 34px;
+    }
+    .pay__item {
+        flex-basis: calc((100% / 3) - (68px / 3));
+    }
+    .option-pay__picture-wrapper {
+        margin-bottom: 10px;
+        min-height: 73px;
+        padding: 18px;
+    }
+    .option-pay__title {
+        font-size: 16px;
+    }
+    .option-pay__discription {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 780px) {
+    .pay__list {
+    flex-direction: column;
+    align-items: center;
+    }
+    .pay__title {
+        font-size: 30px;
+    }
+
+    .pay__item {
+        flex-basis: auto;
+        max-width: 65%;
+    }
+    .option-pay__title {
+        font-size: 22px;
+    }
+    .option-pay__discription {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 580px) {
+    .pay__title {
+        font-size: 28px;
+    }
+    .option-pay__title {
+        font-size: 15px;
+    }
+    .option-pay__discription {
+        font-size: 12px;
+    }
+}
