@@ -32,7 +32,11 @@
     <link rel="stylesheet" href="styles/product.css">
     <link rel="stylesheet" href="styles/pay.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/overlay.css">
+    <link rel="stylesheet" href="styles/modal.css">
+
     <script src="js/burger.js" defer></script>
+    <script src="js/modal.js" defer></script>
     <title>Christmas Trees - Встречай Новый Год с прекрасной живой ёлочкой!</title>
 </head>
 <body>
@@ -246,6 +250,35 @@
             </div>
         </div>
     </footer>
+
+<!-- Модальное окно -->
+    <div class="overlay overlay_order">
+        <div class="modal">
+            <button class="close__modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="currentColor"/>
+                </svg>
+            </button>
+            <h2 class="modal__title">Оформить заказ</h2>
+            <form class="modal__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                <label class="modal__label">
+                    <span class="modal__label-text">ФИО</span>
+                    <input class="modal__input" name="fio" type="text" placeholder="Введите ваше ФИО" required>
+                </label>
+                <label class="modal__label modal__label_last">
+                    <span class="modal__label-text">Телефон</span>
+                    <input class="modal__input" name="tel" type="tel" placeholder="Введите ваш номер телефона" required>
+                </label>
+
+                <input class="modal__order" type="hidden" name="order">
+
+                <button class="modal__batton">Заказать звонок</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="overlay overlay_consultation"></div>
+<!-- Модальное окно -->
 
     <svg class="hide">
         <symbol id="logo" width="164" height="76" viewBox="0 0 164 76" fill="none" xmlns="http://www.w3.org/2000/svg">
